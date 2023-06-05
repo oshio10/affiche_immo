@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import render_template,request
+
 from bs4 import BeautifulSoup
 import requests
 import re
