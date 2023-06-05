@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from flask import Flask, render_template, request, redirect
+
 from bs4 import BeautifulSoup
 import requests
 import re
