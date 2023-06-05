@@ -1,0 +1,81 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Résultats</title>
+    <style>
+    body{ width: 21cm;
+        height: 29.7cm;
+        }
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+        grid-gap: 15px; /* Espacement entre les colonnes */
+    }
+
+    .gauche {
+        /* Styles pour la colonne de gauche */
+    }
+
+    .droite {
+        /* Styles pour la colonne de droite */
+        display: grid;
+        grid-template-columns: 1fr; /* Une seule colonne */
+        grid-gap: 10px; /* Espacement entre les éléments de la colonne */
+    }
+
+    .energetique_logo {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Une seule colonne */
+        grid-gap: 20px; /* Espacement entre les éléments de la colonne */
+        display: flex;
+        align-items: center; /* Centrage vertical */
+    }
+    .prix {
+        display: flex;
+        align-items: center; /* Centrage vertical */
+        
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="gauche">
+            <div class='title'>
+                <h1>{{ title }}</h1>
+            </div>
+            <div class='description'>
+                <p>{{ info }}</p>
+            </div>
+            <div class='prix'>
+                <h3>{{ price }}</h3>
+            </div>
+        </div>
+        <div class="droite">
+            <div class='imgae'>
+                <img src="{{ image }}" alt="Image du bien immobilier">
+            </div>
+            <div class='energetique_logo'>
+                <div class='energie'>
+                    <div class='classe'>
+                        <p>{{ energy_class1 }}</p>
+                    </div>
+                    <div class='gaz'>
+                        <p>{{ energy_class2 }}</p>
+                    </div>
+                </div>
+            <div class='logo'>
+                <img src="{{ logo }}" alt="Logo de l'entreprise" style='background-color:#bdb17d'>
+            </div>
+            </div>
+        </div>            
+    </div>
+    
+
+
+</body>
+</html>
